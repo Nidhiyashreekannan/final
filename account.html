@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial scale=1.0">
+        <title>All Style Store</title>
+        <link rel="stylesheet" href="account.css">
+    </head>
+<body>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo" >
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            
+        </div>
+        
+    </div>
+</div>
+
+<!--account-->
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            
+            <button type="button" class="toggle-btn " onclick="Login()"> Login</button>
+            <button type="button" class="toggle-btn" onclick="Register() ">Register</button>
+        </div>
+        <form id="Login" class="input-group">
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit"  class="submit-btn">Login</button>
+        </form>
+        <form id="Register" class="input-group">
+            <input type="text" class="input-field" placeholder="User ID" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+            <button type="submit"  class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+<script>
+    var x=document.getElementById("Login");
+    var y=document.getElementById("Register");
+    var z=document.getElementById("btn");
+    function Register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="50px";
+    }
+    function Login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+    }
+</script>
+
+    <!--footer-->
+    
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download app for android and ios mobile phone.</p>
+                
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png" >
+                <p>Redefine your wardrobe staples. Explore our timeless yet trendy dresses, thoughtfully designed to suit your individual taste and lifestyle.</p>
+                
+            </div>
+            <div class="footer-col-2">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                
+            </div>
+            <div class="footer-col-2">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+                
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2024-Style Store</p>
+    </div>
+</div>
+
+</body>
+</html>
+
